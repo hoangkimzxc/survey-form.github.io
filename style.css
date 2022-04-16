@@ -1,0 +1,206 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+html {
+  height: auto;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url("./aura.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  margin: 3rem 0 1.5rem 0;
+  text-align: center;
+}
+
+.header > #title {
+  font-weight: 400;
+  font-size: 2.2rem;
+}
+
+.header > #description {
+  margin-top: 0.5rem;
+  font-style: italic;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+#survey-form {
+  background-color: rgba(27, 27, 50, 0.8);
+  padding: 3rem 3rem;
+  border-radius: 7px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.form-group > label {
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.form-group > .form-control {
+  width: 39rem;
+  height: 2.4rem;
+  margin-bottom: 1.75rem;
+  padding-left: 0.7rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: black;
+  border-radius: 5px;
+  border: none;
+}
+
+.form-group > .form-control:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(218, 19, 158, 0.781);
+}
+
+.form-group > p {
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.form-group .clue {
+  font-size: 0.9rem;
+  margin-left: 0.3rem;
+  color: rgb(224, 223, 223);
+}
+
+.form-group .input-radio {
+  position: relative;
+}
+
+input[type="radio"] {
+  /* remove standard background appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* create custom radiobutton appearance */
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+  /* background-color only for content */
+  background-clip: content-box;
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 50%;
+  /* own config */
+  top: 0.3rem;
+  position: absolute;
+  margin-right: 0.5rem;
+}
+
+input[type="radio"]:checked {
+  background-color: #f900bf;
+  border: 2px solid #f900bf;
+}
+
+input[type="radio"]:hover {
+  background-color: #f900bf;
+}
+
+.form-group .input-checkbox {
+  position: relative;
+}
+
+input[type="checkbox"] {
+  /* remove standard background appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* create custom radiobutton appearance */
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+  /* background-color only for content */
+  background-clip: content-box;
+  border: 2px solid white;
+  background-color: white;
+  /* own config */
+  top: 0.3rem;
+  position: absolute;
+  margin-right: 0.5rem;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #f900bf;
+  border: 2px solid #f900bf;
+}
+
+input[type="checkbox"]:hover {
+  background-color: #f900bf;
+}
+
+.form-group > .input-area {
+  height: 7rem;
+  margin-bottom: 1.75rem;
+  padding: 0.4rem 0 0 0.7rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: black;
+  border-radius: 5px;
+  border: none;
+}
+
+.form-group > .input-area:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(218, 19, 158, 0.781);
+}
+
+.form-group > .submit-button {
+  border: none;
+  background-color: #2EB086;
+  font-family: "Poppins", sans-serif;
+  padding: 0.7rem 0;
+  border-radius: 2px;
+  font-size: 1rem;
+  color: rgb(233, 230, 230);
+}
+
+.form-group > .submit-button:hover{
+  background-color: #4dbb98;
+  color: rgb(255, 248, 248);
+
+  cursor: pointer;
+
+}
+
+@media (max-width: 650px) {
+  .form-group > .form-control {
+    width: auto;
+  }
+}
